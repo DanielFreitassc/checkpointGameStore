@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.danielfreitassc.backend.dtos.GameGenreResponse;
 import com.danielfreitassc.backend.dtos.GameResponseDto;
 import com.danielfreitassc.backend.mappers.GameMapper;
 import com.danielfreitassc.backend.models.GameEntity;
@@ -46,8 +47,8 @@ public class GameService {
         return gameMapper.toDto(game.get());
     }
 
-    public Object gameGenre() {
-        return gameRepository.findAll().stream().map(gameMapper::toGenres).toList();
+    public List<GameGenreResponse> gameGenre() {
+        return gameRepository.findAll().stream().map(gameMapper::toGenres).distinct().toList();
     }
 
 }

@@ -1,4 +1,3 @@
--- Criar o tipo ENUM
 CREATE TYPE game_genre AS ENUM (
     'ACTION', 'ADVENTURE', 'RPG', 'STRATEGY', 'SPORTS', 'PUZZLE', 
     'SHOOTER', 'FIGHTING', 'RACING', 'SIMULATION', 'HORROR', 
@@ -6,7 +5,6 @@ CREATE TYPE game_genre AS ENUM (
     'PARTY', 'METROIDVANIA'
 );
 
--- Criar a tabela com o tipo ENUM
 CREATE TABLE games (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
