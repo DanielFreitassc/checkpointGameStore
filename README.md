@@ -15,26 +15,49 @@
 #### Exemplo de Resposta
 ```json
 {
-  "content": [
-    {
-      "id": 1,
-      "name": "The Legend of Zelda: Breath of the Wild",
-      "genre": "ADVENTURE",
-      "price": 199.99
+    "content": [
+        {
+            "id": 1,
+            "name": "God of War",
+            "description": "Acompanhando Kratos e seu filho Atreus em uma jornada cheia de ação, mitologia e emoção.",
+            "image": "https://img.hype.games/cdn/209a330a-50f4-48d1-9db7-7485e6a81d87cover.jpg",
+            "genre": "ACTION",
+            "price": 249.90
+        },
+        {
+            "id": 2,
+            "name": "The Witcher 3: Wild Hunt",
+            "description": "Aventuras de Geralt de Rivia enquanto ele busca por sua filha adotiva em um mundo vasto e perigoso.",
+            "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg?t=1736424367",
+            "genre": "RPG",
+            "price": 149.90
+        }
+    ],
+    "pageable": {
+        "pageNumber": 0,
+        "pageSize": 2,
+        "sort": {
+            "empty": true,
+            "sorted": false,
+            "unsorted": true
+        },
+        "offset": 0,
+        "paged": true,
+        "unpaged": false
     },
-    {
-      "id": 2,
-      "name": "God of War",
-      "genre": "ACTION",
-      "price": 249.90
-    }
-  ],
-  "pageable": {
-    "pageNumber": 0,
-    "pageSize": 2
-  },
-  "totalPages": 26,
-  "totalElements": 51
+    "last": false,
+    "totalPages": 24,
+    "totalElements": 48,
+    "size": 2,
+    "number": 0,
+    "sort": {
+        "empty": true,
+        "sorted": false,
+        "unsorted": true
+    },
+    "first": true,
+    "numberOfElements": 2,
+    "empty": false
 }
 ```
 
@@ -54,26 +77,49 @@
 #### Exemplo de Resposta
 ```json
 {
-  "content": [
-    {
-      "id": 2,
-      "name": "God of War",
-      "genre": "ACTION",
-      "price": 249.90
+    "content": [
+        {
+            "id": 1,
+            "name": "God of War",
+            "description": "Acompanhando Kratos e seu filho Atreus em uma jornada cheia de ação, mitologia e emoção.",
+            "image": "https://img.hype.games/cdn/209a330a-50f4-48d1-9db7-7485e6a81d87cover.jpg",
+            "genre": "ACTION",
+            "price": 249.90
+        },
+        {
+            "id": 24,
+            "name": "Monster Hunter: World",
+            "description": "Caça monstros gigantes em um mundo vasto, com batalhas e itens para melhorar seu personagem.",
+            "image": "https://miro.medium.com/v2/resize:fit:1400/0*UwFQm_E8NFcRyrmC.png",
+            "genre": "ACTION",
+            "price": 249.90
+        }
+    ],
+    "pageable": {
+        "pageNumber": 0,
+        "pageSize": 2,
+        "sort": {
+            "empty": true,
+            "sorted": false,
+            "unsorted": true
+        },
+        "offset": 0,
+        "paged": true,
+        "unpaged": false
     },
-    {
-      "id": 25,
-      "name": "Monster Hunter: World",
-      "genre": "ACTION",
-      "price": 249.90
-    }
-  ],
-  "pageable": {
-    "pageNumber": 0,
-    "pageSize": 2
-  },
-  "totalPages": 4,
-  "totalElements": 7
+    "last": false,
+    "totalPages": 4,
+    "totalElements": 7,
+    "size": 2,
+    "number": 0,
+    "sort": {
+        "empty": true,
+        "sorted": false,
+        "unsorted": true
+    },
+    "first": true,
+    "numberOfElements": 2,
+    "empty": false
 }
 ```
 
@@ -90,10 +136,12 @@
 #### Exemplo de Resposta
 ```json
 {
-  "id": 29,
-  "name": "Doom Eternal",
-  "genre": "SHOOTER",
-  "price": 149.90
+    "id": 29,
+    "name": "Star Wars Jedi: Fallen Order",
+    "description": "Jogo de ação e aventura em Star Wars, onde você assume o papel de um Jedi em treinamento.",
+    "image": "https://i.ytimg.com/vi/TtyoXez8ncU/maxresdefault.jpg",
+    "genre": "ACTION",
+    "price": 199.90
 }
 ```
 
