@@ -36,6 +36,8 @@ public class GameEntity {
 
     @JsonProperty("genre")
     public String getGenre() {
-        return genre != null ? genre.getDescricao() : null;
+        return genre != null ? genre.name() : null; 
     }
+
+
 }

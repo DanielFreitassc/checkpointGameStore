@@ -14,6 +14,7 @@ import com.danielfreitassc.backend.dtos.GameGenreResponse;
 import com.danielfreitassc.backend.dtos.GameResponseDto;
 import com.danielfreitassc.backend.mappers.GameMapper;
 import com.danielfreitassc.backend.models.GameEntity;
+import com.danielfreitassc.backend.models.GameGenre;
 import com.danielfreitassc.backend.repositories.GameRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -48,7 +49,11 @@ public class GameService {
     }
 
     public List<GameGenreResponse> gameGenre() {
-        return gameRepository.findAll().stream().map(gameMapper::toGenres).distinct().toList();
+        return gameRepository.findAll().stream()
+            .map(game -> new GameGenreResponse(game.getGenre(), game.getGenre() != null ? GameGenre.valueOf(game.getGenre()).getDescription() : null))
+            .distinct()
+            .toList();
     }
+    
 
 }

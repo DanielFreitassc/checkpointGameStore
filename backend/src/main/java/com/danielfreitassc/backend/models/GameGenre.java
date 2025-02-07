@@ -21,13 +21,14 @@ public enum GameGenre {
     PARTY("Festa"),
     METROIDVANIA("Metroidvania");
 
-    private final String genre;
+    private final String description;
 
-    GameGenre(String genre) {
-        this.genre = genre;
+    GameGenre(String description) {
+        this.description = description;
     }
 
-    public String getDescricao() {
-        return genre;
+    public String getDescription() { 
+        return description;
     }
+    
 }

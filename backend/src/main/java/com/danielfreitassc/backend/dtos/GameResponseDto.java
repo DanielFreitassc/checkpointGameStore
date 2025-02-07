@@ -7,7 +7,7 @@ public record GameResponseDto(
     String name,
     String description,
     String image,
-    String genre,
+    String label,
     BigDecimal price
 ) {
     
