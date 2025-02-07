@@ -15,12 +15,19 @@ public interface GameMapper {
     @Mapping(target = "label", source = "genre", qualifiedByName = "genreToLabel")
     GameResponseDto toDto(GameEntity gameEntity);
 
+    @Mapping(target = "genre", source = "genre", qualifiedByName = "genreToName")
+    @Mapping(target = "label", source = "genre", qualifiedByName = "genreToLabel")
+    GameGenreResponse toGenres(GameEntity gameEntity);
+
+    @Named("genreToName")
+    default String genreToName(GameGenre genre) {
+        return genre != null ? genre.name() : null;
+    }
+    
     @Named("genreToLabel")
     default String genreToLabel(GameGenre genre) {
         return genre != null ? genre.getDescription() : null;
-    }
-
-    @Mapping(target = "genre", ignore = true)
-    @Mapping(target = "label", ignore = true)
-    GameGenreResponse toGenres(GameGenre gameGenre);
+    }    
 }
+
+
