@@ -1,5 +1,13 @@
-export const App = () => {
-  return <h1>ola</h1>;
-};
+import { ThemeProvider } from "styled-components";
+import { DefaultLayout } from "./layouts/DefaultLayout";
+import { GlobalStyle } from "./styles/global";
+import { darkTheme } from "./styles/themes/darkTheme";
 
-export default App;
+export const App = () => {
+  return (
+    <ThemeProvider theme={darkTheme}>
+      <DefaultLayout />
+      <GlobalStyle />
+    </ThemeProvider>
+  );
+};

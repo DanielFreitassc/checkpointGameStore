@@ -10,9 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.9",
     "checkpointstore": "file:",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-multi-carousel": "^2.8.5",
+    "react-router-dom": "^7.1.5",
+    "styled-components": "^6.1.15",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
