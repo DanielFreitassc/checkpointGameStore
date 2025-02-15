@@ -4,31 +4,31 @@
       "id": 1,
       "name": "Star Wars Jedi: Fallen Order",
       "description": "Uma aventura no universo de Star Wars como um jovem Padawan.",
-      "image": "../assets/starwars-wallpaper.jpg"
+      "image": "../../public/starwars-wallpaper.jpg"
     },
     {
       "id": 2,
       "name": "Minecraft",
       "description": "Explore, construa e sobreviva em um mundo de blocos infinito.",
-      "image": "../assets/minecraft-wallaper.jpg"
+      "image": "../../public/minecraft-wallaper.jpg"
     },
     {
       "id": 3,
       "name": "The Witcher 3: Wild Hunt",
       "description": "Acompanhe Geralt em uma jornada épica em um mundo aberto.",
-      "image": "../assets/thewitcher-wallapepr.jpg"
+      "image": "../../public/thewitcher-wallapepr.jpg"
     },
     {
       "id": 4,
       "name": "Doom Eternal",
       "description": "Ação frenética enfrentando hordas de demônios no inferno.",
-      "image": "../assets/doometernal-wallpaper.jpg"
+      "image": "../../public/doometernal-wallpaper.jpg"
     },
     {
       "id": 5,
       "name": "God of War (2018)",
       "description": "Kratos e Atreus exploram a mitologia nórdica em uma jornada épica.",
-      "image": "../assets/godofwar-wallpaper.jpg"
+      "image": "../../public/godofwar-wallpaper.jpg"
     }
   ]
 }
