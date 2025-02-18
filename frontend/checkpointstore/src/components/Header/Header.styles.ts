@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   width: 100%;
-  position: relative;
+  position: absolute;
 `;
 
 export const Header = styled.header`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -15,9 +15,11 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: ${({ theme }) => theme.colors.background};
+  border-bottom: 5px solid ${({ theme }) => theme.colors.bannerButton};
 
   h2 {
-    color: ${({ theme }) => theme.colors.bannerText};
+    color: ${({ theme }) => theme.colors.backGroundText};
   }
   span {
     color: ${({ theme }) => theme.colors.bannerButton};
@@ -29,46 +31,5 @@ export const Header = styled.header`
 
   @media (max-width: 480px) {
     padding: 1rem;
-  }
-`;
-export const BannerContainer = styled.section`
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-`;
-
-export const Overlay = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-`;
-
-export const Slide = styled.div`
-  position: relative;
-  width: 100%;
-  height: 45rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  h1 {
-    position: absolute;
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    z-index: 3;
   }
 `;

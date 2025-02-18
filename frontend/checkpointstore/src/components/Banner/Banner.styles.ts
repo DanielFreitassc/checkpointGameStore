@@ -8,42 +8,36 @@ export const BannerContainer = styled.section`
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  pointer-events: none;
-
-  @media (max-width: 768px) {
-    height: 18.75rem;
-  }
-
-  @media (max-width: 480px) {
-    height: 15.625rem;
-  }
 `;
 
 export const Overlay = styled.div`
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 6;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
 `;
 
-export const BannerContent = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  text-align: center;
-  color: white;
-
-  h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
+export const Slide = styled.div`
+  position: relative;
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 
   img {
     width: 100%;
-    height: 25rem;
+    height: 100%;
     object-fit: cover;
+  }
+
+  h1 {
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 3;
   }
 `;

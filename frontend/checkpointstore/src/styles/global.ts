@@ -9,12 +9,12 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-    background: ${(props) => props.theme.white};
-    color: ${(props) => props.theme.black};
+    background: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.backgroundText};
 }
 
 body, input, textarea, button {
-    font-family: 'Inter', sans-serif;
+    font-family: "Lexend", serif;
     font-weight: 400;
     font-size: 1rem;
 }
