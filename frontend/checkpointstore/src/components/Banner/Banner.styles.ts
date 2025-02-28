@@ -21,7 +21,7 @@ export const Overlay = styled.div`
 export const Slide = styled.div`
   position: relative;
   width: 100%;
-  height: 45rem;
+  height: clamp(45rem, 50vh, 70rem);
   display: flex;
   align-items: center;
   justify-content: center;

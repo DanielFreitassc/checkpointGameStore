@@ -1,11 +1,11 @@
 import { useGenreData } from "../../hooks/useGenreData";
-import * as Styles from "./GenresFilter.styles";
+import * as Styles from "./SectionGenres.styles";
 import { genreImages } from "../../data/genreImages";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
-export const SectionGenresFilter = () => {
+export const SectionGenres = () => {
   const { data } = useGenreData();
   return (
     <Styles.GenresFilterContainer>

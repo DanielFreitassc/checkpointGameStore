@@ -1,11 +1,13 @@
 import { SectionAbout } from "../../components/SectionAbout";
-import { SectionGenresFilter } from "../../components/SectionGenresFilter";
+import { SectionGamesCatalog } from "../../components/SectionGamesCatalog";
+import { SectionGenres } from "../../components/SectionGenres";
 
 export const HomePage = () => {
   return (
     <>
       <SectionAbout />
-      <SectionGenresFilter />
+      <SectionGenres />
+      <SectionGamesCatalog />
     </>
   );
 };

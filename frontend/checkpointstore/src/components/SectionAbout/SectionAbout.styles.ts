@@ -15,12 +15,12 @@ export const InfoText = styled.div`
   text-align: center;
 
   h2 {
-    font-size: 4rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 500;
     line-height: 1.4;
   }
   p {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     line-height: 1.5;
   }
 `;

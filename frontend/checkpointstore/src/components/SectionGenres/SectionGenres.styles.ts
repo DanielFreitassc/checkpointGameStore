@@ -10,9 +10,9 @@ export const GenresFilterContainer = styled.div`
   overflow: hidden;
 
   h2 {
-    font-size: 4rem;
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: clamp(1rem, 2vw, 2rem);
   }
 
   .swiper {
@@ -21,8 +21,8 @@ export const GenresFilterContainer = styled.div`
 `;
 export const Overlay = styled.div`
   position: absolute;
-  width: 12rem;
-  height: 12rem;
+  width: clamp(5rem, 100vw, 12rem);
+  height: clamp(5rem, 100vw, 12rem);
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
   border-radius: 8px;
@@ -30,8 +30,8 @@ export const Overlay = styled.div`
 
 export const Slide = styled.div`
   position: relative;
-  width: 12rem;
-  height: 12rem;
+  width: clamp(8rem, 80vw, 12rem);
+  height: clamp(8rem, 80vw, 12rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,8 +39,8 @@ export const Slide = styled.div`
   img {
     object-fit: cover;
     object-position: center;
-    width: 12rem;
-    height: 12rem;
+    width: clamp(8rem, 80vw, 12rem);
+    height: clamp(8rem, 80vw, 12rem);
     border-radius: 8px;
     z-index: 1;
     box-shadow: 0px 0px 20px 0px rgba(140, 131, 131, 0.35);

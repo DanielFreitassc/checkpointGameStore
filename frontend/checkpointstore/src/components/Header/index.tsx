@@ -9,21 +9,31 @@ export const Header = () => {
   return (
     <Styles.HeaderContainer>
       <Styles.Header>
-        <h2>
-          CheckPoint<span>Store</span>
-        </h2>
-        <Switch
-          onChange={changeTheme}
-          checked={theme.name === "dark"}
-          checkedIcon={<Sun size={20} color="white" />}
-          uncheckedIcon={<Moon size={20} color="white" />}
-          onColor={theme.colors.background}
-          offColor="#bbb"
-          onHandleColor="#fff"
-          offHandleColor="#999"
-          width={60}
-          height={30}
-        />
+        <Styles.HeaderInfo>
+          <h2>
+            CheckPoint<span>Store</span>
+          </h2>
+          <Switch
+            onChange={changeTheme}
+            checked={theme.name === "dark"}
+            checkedIcon={
+              <Styles.SwitchIcon>
+                <Sun size={20} color="white" />
+              </Styles.SwitchIcon>
+            }
+            uncheckedIcon={
+              <Styles.SwitchIcon>
+                <Moon size={20} color="white" />
+              </Styles.SwitchIcon>
+            }
+            onColor={theme.colors.background}
+            offColor="#bbb"
+            onHandleColor="#fff"
+            offHandleColor="#999"
+            width={60}
+            height={30}
+          />
+        </Styles.HeaderInfo>
       </Styles.Header>
     </Styles.HeaderContainer>
   );
