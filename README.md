@@ -183,3 +183,4 @@
 - `GET /games?page={page}&size={size}&genre={genre}`: Retorna jogos filtrados por gênero.
 - `GET /games/{id}`: Retorna detalhes de um jogo específico.
 - `GET /games/genres`: Retorna lista de gêneros disponíveis.
+
