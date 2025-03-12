@@ -4,6 +4,8 @@ import Select from "react-select";
 import { useGenreStore } from "../../store/genreStore";
 import { useGamesData } from "../../hooks/useGamesData";
 import { useGenreData } from "../../hooks/useGenreData";
+import { Link } from "react-router-dom";
+import ReactPaginate from "react-paginate";
 
 export const SectionGamesCatalog = () => {
   const { selectedGenre, setSelectedGenre } = useGenreStore();
@@ -36,13 +38,14 @@ export const SectionGamesCatalog = () => {
     setSelectedGenre(selectedOption?.value);
     setPage(0);
   };
+  const handlePageClick = (data: any) => {
+    setPage(data.selected);
+  };
 
   return (
     <Styles.GamesCatalogContainer>
       <Styles.GamesCatalogFilter>
         <h1>Todos os Jogos</h1>
-
-        {/* Select para escolher o gênero */}
         <Styles.GameCatalogFilter>
           <Select
             className="selectInput"
@@ -54,45 +57,43 @@ export const SectionGamesCatalog = () => {
         </Styles.GameCatalogFilter>
       </Styles.GamesCatalogFilter>
 
-      {/* {isGenreLoading && <div>Carregando gêneros...</div>}
+      {isGenreLoading && <div>Carregando gêneros...</div>}
       {isGenreError && <div>Erro ao carregar os gêneros.</div>}
 
       {isGamesLoading && <div>Carregando jogos...</div>}
-      {isGamesError && <div>Erro ao carregar os jogos.</div>} */}
+      {isGamesError && <div>Erro ao carregar os jogos.</div>}
 
       {/* Lista de jogos */}
       <Styles.GameListContainer>
         {gamesData?.content?.map((game) => (
-          <Styles.CardGames>
-            <img src={game.image} alt={game.name} />
-            <Styles.CardGamesInfo>
-              <h2>{game.name}</h2>
-              <span>{game.label}</span>
-              <p>R$ {game.price}</p>
-            </Styles.CardGamesInfo>
-          </Styles.CardGames>
+          <Link to={`/games/${game.id}`}>
+            <Styles.CardGames>
+              <img src={game.image} alt={game.name} />
+              <Styles.CardGamesInfo>
+                <h2>{game.name}</h2>
+                <span>{game.label}</span>
+                <p>R$ {game.price}</p>
+              </Styles.CardGamesInfo>
+            </Styles.CardGames>
+          </Link>
         ))}
       </Styles.GameListContainer>
 
       {/* Paginação */}
       <Styles.Paginacao>
-        <div>
-          <button
-            onClick={() => setPage((prev) => Math.max(prev - 1, 0))}
-            disabled={page === 0 || isGamesLoading}
-          >
-            Anterior
-          </button>
-          <span>
-            Página {page + 1} de {gamesData?.totalPages}
-          </span>
-          <button
-            onClick={() => setPage((prev) => prev + 1)}
-            disabled={gamesData?.last || isGamesLoading}
-          >
-            Próxima
-          </button>
-        </div>
+        <ReactPaginate
+          pageCount={gamesData?.totalPages} // Total de páginas
+          pageRangeDisplayed={3} // Número de páginas visíveis
+          marginPagesDisplayed={1} // Número de páginas nas bordas
+          onPageChange={handlePageClick} // Função ao mudar de página
+          forcePage={page} // Página atual (baseada em 0)
+          previousLabel="Anterior"
+          nextLabel="Próxima"
+          breakLabel="..."
+          containerClassName="pagination"
+          activeClassName="active"
+          disabledClassName="disabled"
+        />
       </Styles.Paginacao>
     </Styles.GamesCatalogContainer>
   );

@@ -12,7 +12,13 @@ export const Banner = () => {
             <Styles.Slide>
               <Styles.Overlay />
               <img src={game.image} alt={game.name} />
-              <h1>{game.name}</h1>
+              <div className="content-banner">
+                <h1>{game.name}</h1>
+                <p>{game.description}</p>
+                <div className="content-banner-button">
+                  <button>Saiba Mais+</button>
+                </div>
+              </div>
             </Styles.Slide>
           </SwiperSlide>
         ))}

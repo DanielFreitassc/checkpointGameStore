@@ -3,14 +3,14 @@ import { Api } from "../services/Api";
 import { GameDataApiResponse } from "../types/game-data";
 
 interface UseGamesDataParams {
-  page: number;
+  page?: number;
   genre?: string;
-  size: number;
+  size?: number;
 }
 
 const fetchGames = async (
-  page: number,
-  size: number,
+  page?: number,
+  size?: number,
   genre?: string
 ): Promise<GameDataApiResponse> => {
   const genreParam = genre ? `&genre=${genre}` : "";

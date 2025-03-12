@@ -7,11 +7,18 @@ export const GamesCatalogContainer = styled.section`
 export const GamesCatalogFilter = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 3.75rem;
+  margin-bottom: 5rem;
+  margin-inline: auto;
+  gap: clamp(2rem, 12vw, 2rem);
 
   h1 {
-    font-size: 2.25rem;
+    font-size: clamp(2rem, 4vw + 1rem, 3rem);
+    text-align: center;
+  }
+  @media (max-width: 718px) {
+    justify-content: center;
   }
 `;
 export const GameCatalogFilter = styled.div`
@@ -36,9 +43,14 @@ export const CardGames = styled.div`
   justify-content: center;
   gap: 1rem;
   img {
-    height: clamp(400px, 60vh, 484px);
+    height: clamp(200px, 30vw, 484px);
     object-fit: cover;
     border-radius: 20px;
+  }
+  &:hover {
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.2s;
+    cursor: pointer;
   }
 `;
 export const CardGamesInfo = styled.div`
@@ -68,7 +80,44 @@ export const CardGamesInfo = styled.div`
 `;
 
 export const Paginacao = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 8rem;
+  }
+
+  .pagination li {
+    margin: 0 0.5rem;
+  }
+
+  .pagination li a {
+    padding: 8px 12px;
+    border: 2px solid ${({ theme }) => theme.colors.tagBackground};
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .pagination li a:hover {
+    background-color: ${({ theme }) => theme.colors.tagBackground};
+    color: white;
+  }
+
+  .pagination .active a {
+    background-color: ${({ theme }) => theme.colors.tagBackground};
+    color: ${({ theme }) => theme.colors.bannerText};
+    border-color: ${({ theme }) => theme.colors.primary};
+  }
+
+  .pagination .disabled a {
+    color: ${({ theme }) => theme.colors.disabled};
+    cursor: not-allowed;
+    border-color: ${({ theme }) => theme.colors.textFooter};
+  }
+
+  .pagination .disabled a:hover {
+    background-color: ${({ theme }) => theme.colors.textFooter};
+  }
 `;

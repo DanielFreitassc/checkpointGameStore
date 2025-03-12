@@ -19,5 +19,9 @@ export const lightTheme = {
 
     //Select
     selectTextColor: "#1e1e1e",
+
+    //TAG GAME INFO PAGE
+    tagGameInfoBackGround: "#D8DAFD",
+    tagGameInfoBackText: "#767CF9",
   },
 };

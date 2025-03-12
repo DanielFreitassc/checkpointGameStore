@@ -8,6 +8,7 @@ export const GenresFilterContainer = styled.div`
   align-items: center;
   text-align: center;
   overflow: hidden;
+  margin-top: 4rem;
 
   h2 {
     font-size: clamp(1.5rem, 2.5vw, 4rem);
@@ -17,6 +18,10 @@ export const GenresFilterContainer = styled.div`
 
   .swiper {
     width: 100%;
+  }
+
+  @media (max-width: 479px) {
+    display: none;
   }
 `;
 export const Overlay = styled.div`

@@ -8,6 +8,7 @@ export const BannerContainer = styled.section`
   justify-content: center;
   text-align: center;
   overflow: hidden;
+  height: clamp(45rem, 55vw, 55rem);
 `;
 
 export const Overlay = styled.div`
@@ -21,7 +22,7 @@ export const Overlay = styled.div`
 export const Slide = styled.div`
   position: relative;
   width: 100%;
-  height: clamp(45rem, 50vh, 70rem);
+  height: clamp(45rem, 70vw, 70rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,11 +34,41 @@ export const Slide = styled.div`
     object-fit: cover;
   }
 
-  h1 {
+  .content-banner {
     position: absolute;
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
+    display: flex;
+    gap: clamp(2rem, 3vw, 6rem);
+    width: 100%;
+    padding: clamp(1rem, 7vw, 7rem);
+    flex-direction: column;
+    align-items: center;
     z-index: 3;
+    margin-inline: auto;
+    h1 {
+      color: ${({ theme }) => theme.colors.bannerText};
+      font-size: clamp(1.5rem, 4vw, 4rem);
+      font-weight: bold;
+    }
+    p {
+      font-size: clamp(1rem, 2vw, 2rem);
+      color: ${({ theme }) => theme.colors.bannerText};
+    }
+    .content-banner-button {
+      button {
+        padding-inline: clamp(1rem, 2vw, 2.5rem);
+        padding-block: clamp(1rem, 2vw, 1.5rem);
+        border-radius: 8px;
+        background: ${({ theme }) => theme.colors.bannerButton};
+        color: ${({ theme }) => theme.colors.bannerText};
+
+        border: none;
+        cursor: pointer;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+      }
+      button:hover {
+        transform: scale(1.1);
+        transition: transform 0.1s ease-in-out;
+      }
+    }
   }
 `;

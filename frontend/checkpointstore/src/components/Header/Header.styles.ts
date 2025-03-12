@@ -19,6 +19,19 @@ export const HeaderInfo = styled.div`
   margin-inline: auto;
   align-items: center;
   flex-wrap: wrap;
+  @media (max-width: 215px) {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  a {
+    color: inherit;
+    &:hover {
+      transition: transform ease-in-out 0.2s;
+      transform: scale(1.05);
+    }
+  }
 
   h2 {
     color: ${({ theme }) => theme.colors.backGroundText};

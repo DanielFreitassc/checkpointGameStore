@@ -4,20 +4,29 @@ import { App } from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from "./pages/Home/HomePage.tsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { GameDetailsPage } from "./pages/GameDetails/GameDetailsPage.tsx";
+import ScrollToTop from "./components/ScrollToTop/index.tsx";
 
 const client = new QueryClient();
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+
+    element: (
+      <>
+        <ScrollToTop />
+        <App />
+      </>
+    ),
     children: [
       {
         path: "/",
         element: <HomePage />,
       },
       {
-        path: "/gamedetails/:id",
+        path: "/games/:id",
+        element: <GameDetailsPage />,
       },
     ],
   },

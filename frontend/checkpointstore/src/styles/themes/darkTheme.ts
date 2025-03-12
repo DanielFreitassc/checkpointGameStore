@@ -19,5 +19,9 @@ export const darkTheme = {
 
     //Select
     selectTextColor: "#1e1e1e",
+
+    //TAG GAME INFO PAGE
+    tagGameInfoBackGround: "#F5F4F9",
+    tagGameInfoBackText: "#767CF9",
   },
 };
