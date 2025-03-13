@@ -2,21 +2,59 @@ import { useState } from "react";
 import * as Styles from "./SectionGamesCatalog.styles";
 import Select from "react-select";
 import { useGenreStore } from "../../store/genreStore";
-import { useGamesData } from "../../hooks/useGamesData";
-import { useGenreData } from "../../hooks/useGenreData";
+// import { useGenreData } from "../../hooks/useGenreData";
 import { Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
+import gamesCatalogDataMock from "../../data/mock/games.json";
+import genreDataMock from "../../data/mock/genres.json";
 
 export const SectionGamesCatalog = () => {
   const { selectedGenre, setSelectedGenre } = useGenreStore();
   const [page, setPage] = useState(0);
   const size = 6;
 
-  const {
-    data: genreData,
-    isLoading: isGenreLoading,
-    isError: isGenreError,
-  } = useGenreData();
+  // ==================================================
+  // LÓGICA COM DADOS MOCKADOS (games.json)
+  // ==================================================
+
+  const gamesCatalog = gamesCatalogDataMock.gamesCatalog;
+  const genreOptionsMock = genreDataMock.genresOptionsMock;
+
+  const genreOptions =
+    genreOptionsMock.map((genre) => ({
+      value: genre.genre,
+      label: genre.label,
+    })) || [];
+
+  // Filtra os jogos com base no gênero selecionado
+  const filteredGames = selectedGenre
+    ? gamesCatalog.filter((game) => {
+        const selectedGenreLabel = genreOptions.find(
+          (option) => option.value === selectedGenre
+        )?.label;
+        return game.label === selectedGenreLabel;
+      })
+    : gamesCatalog;
+
+  // Aplica a paginação
+  const startIndex = page * size;
+  const endIndex = startIndex + size;
+  const paginatedGames = filteredGames.slice(startIndex, endIndex);
+
+  // Calcula o número total de páginas
+  const pageCount = Math.ceil(filteredGames.length / size);
+
+  // ==================================================
+  // LÓGICA COM API (COMENTADA)
+  // Caso queira usar a API, descomente o código abaixo e comente a lógica de dados mockados acima.
+  // ==================================================
+
+  // const {
+  //   data: genreData,
+  //   isLoading: isGenreLoading,
+  //   isError: isGenreError,
+  // } = useGenreData();
+  /*
 
   const {
     data: gamesData,
@@ -28,17 +66,16 @@ export const SectionGamesCatalog = () => {
     size,
   });
 
-  const genreOptions =
-    genreData?.map((genre) => ({
-      value: genre.genre,
-      label: genre.label,
-    })) || [];
+  const paginatedGames = gamesData?.content || [];
+  const pageCount = gamesData?.totalPages || 0;
+  */
 
   const handleGenreChange = (selectedOption: any) => {
     setSelectedGenre(selectedOption?.value);
     setPage(0);
   };
-  const handlePageClick = (data: any) => {
+
+  const handlePageClick = (data: { selected: number }) => {
     setPage(data.selected);
   };
 
@@ -52,21 +89,15 @@ export const SectionGamesCatalog = () => {
             options={genreOptions}
             onChange={handleGenreChange}
             placeholder="Selecione um gênero"
-            isDisabled={isGenreLoading || isGenreError}
+            // isDisabled={isGenreLoading || isGenreError}
           />
         </Styles.GameCatalogFilter>
       </Styles.GamesCatalogFilter>
 
-      {isGenreLoading && <div>Carregando gêneros...</div>}
-      {isGenreError && <div>Erro ao carregar os gêneros.</div>}
-
-      {isGamesLoading && <div>Carregando jogos...</div>}
-      {isGamesError && <div>Erro ao carregar os jogos.</div>}
-
       {/* Lista de jogos */}
       <Styles.GameListContainer>
-        {gamesData?.content?.map((game) => (
-          <Link to={`/games/${game.id}`}>
+        {paginatedGames.map((game) => (
+          <Link to={`/games/${game.id}`} key={game.id}>
             <Styles.CardGames>
               <img src={game.image} alt={game.name} />
               <Styles.CardGamesInfo>
@@ -82,11 +113,11 @@ export const SectionGamesCatalog = () => {
       {/* Paginação */}
       <Styles.Paginacao>
         <ReactPaginate
-          pageCount={gamesData?.totalPages} // Total de páginas
-          pageRangeDisplayed={3} // Número de páginas visíveis
-          marginPagesDisplayed={1} // Número de páginas nas bordas
-          onPageChange={handlePageClick} // Função ao mudar de página
-          forcePage={page} // Página atual (baseada em 0)
+          pageCount={pageCount}
+          pageRangeDisplayed={3}
+          marginPagesDisplayed={1}
+          onPageChange={handlePageClick}
+          forcePage={page}
           previousLabel="Anterior"
           nextLabel="Próxima"
           breakLabel="..."

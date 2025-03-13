@@ -1,0 +1,21 @@
+{
+  "genresOptionsMock": [
+    { "genre": "ACTION", "label": "Ação" },
+    { "genre": "RPG", "label": "RPG" },
+    { "genre": "SIMULATION", "label": "Simulação" },
+    { "genre": "SPORTS", "label": "Esportes" },
+    { "genre": "PARTY", "label": "Festa" },
+    { "genre": "SHOOTER", "label": "Atirador" },
+    { "genre": "RACING", "label": "Corrida" },
+    { "genre": "HORROR", "label": "Terror" },
+    { "genre": "FIGHTING", "label": "Luta" },
+    { "genre": "METROIDVANIA", "label": "Metroidvania" },
+    { "genre": "ADVENTURE", "label": "Aventura" },
+    { "genre": "PUZZLE", "label": "Quebra-cabeça" },
+    { "genre": "MOBA", "label": "MOBA" },
+    { "genre": "MMORPG", "label": "MMORPG" },
+    { "genre": "PLATFORMER", "label": "Plataforma" },
+    { "genre": "SURVIVAL", "label": "Sobrevivência" },
+    { "genre": "STRATEGY", "label": "Estratégia" }
+  ]
+}

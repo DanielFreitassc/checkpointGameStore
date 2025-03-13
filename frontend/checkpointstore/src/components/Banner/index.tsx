@@ -2,6 +2,7 @@ import * as Styles from "./Banner.styles";
 import { games } from "../../data/GamesBanner.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import { Link } from "react-router-dom";
 
 export const Banner = () => {
   return (
@@ -16,7 +17,9 @@ export const Banner = () => {
                 <h1>{game.name}</h1>
                 <p>{game.description}</p>
                 <div className="content-banner-button">
-                  <button>Saiba Mais+</button>
+                  <Link to={`/games/${game.id}`}>
+                    <button>Saiba Mais+</button>
+                  </Link>
                 </div>
               </div>
             </Styles.Slide>

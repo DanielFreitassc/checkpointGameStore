@@ -1,0 +1,757 @@
+{
+  "gamesCatalog": [
+    {
+      "id": 1,
+      "name": "God of War",
+      "description": "Acompanhando Kratos e seu filho Atreus em uma jornada cheia de ação, mitologia e emoção.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/8/82/God_of_War_2018_capa.png",
+      "label": "Ação",
+      "price": 249.9
+    },
+    {
+      "id": 2,
+      "name": "The Witcher 3: Wild Hunt",
+      "description": "Aventuras de Geralt de Rivia enquanto ele busca por sua filha adotiva em um mundo vasto e perigoso.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/0/06/TW3_Wild_Hunt.png",
+      "label": "RPG",
+      "price": 149.9
+    },
+    {
+      "id": 3,
+      "name": "Minecraft",
+      "description": "Construção e exploração em um mundo de blocos, com foco em sobrevivência e criatividade.",
+      "image": "https://www.adrenaline.com.br/wp-content/uploads/2023/06/minecraft-capa.jpg",
+      "label": "Simulação",
+      "price": 99.9
+    },
+    {
+      "id": 4,
+      "name": "FIFA 23",
+      "description": "Jogo de futebol com modos de jogo realistas, como FIFA Ultimate Team e Carreira.",
+      "image": "https://cdn.jornaldaparaiba.com.br/wp-content/uploads/2022/07/FIFA-23.jpg?xid=702307",
+      "label": "Esportes",
+      "price": 299.9
+    },
+    {
+      "id": 5,
+      "name": "Among Us",
+      "description": "Jogo de dedução social onde os jogadores devem descobrir quem é o impostor.",
+      "image": "https://sm.ign.com/ign_br/cover/a/among-us/among-us_8kks.jpg",
+      "label": "Festa",
+      "price": 29.9
+    },
+    {
+      "id": 6,
+      "name": "Call of Duty: Modern Warfare II",
+      "description": "Shooter de ação intensa, com foco em missões militares e combate online.",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/2400/ac505d57a46e24dd96712263d89a150cb443af288c025ff2.jpg",
+      "label": "Atirador",
+      "price": 199.9
+    },
+    {
+      "id": 7,
+      "name": "Fortnite",
+      "description": "Batalha real onde você constrói, luta e sobrevive até ser o último em pé.",
+      "image": "https://s2-ge.glbimg.com/rTBwLqhxwmu0z4EiDYtbfislArI=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/C/4/WC166yT0uMa85VkUrLTQ/15br-social-lineup-social-1920x1080-685054651.jpg",
+      "label": "Atirador",
+      "price": 0.0
+    },
+    {
+      "id": 8,
+      "name": "Resident Evil Village",
+      "description": "Horror psicológico e ação em uma vila cheia de criaturas assustadoras e mistérios.",
+      "image": "https://squared-potato.pt/wp-content/uploads/2021/01/Resident-Evil-Village-Capa.jpg",
+      "label": "Terror",
+      "price": 179.9
+    },
+    {
+      "id": 9,
+      "name": "Street Fighter V",
+      "description": "Luta de rua com diversos personagens e estilos de combate únicos.",
+      "image": "https://cdn.awsli.com.br/2500x2500/1041/1041512/produto/143491546/street-fighter-v---pc-c-digo-digital-hu2gpsqdts.jpg",
+      "label": "Luta",
+      "price": 149.9
+    },
+    {
+      "id": 10,
+      "name": "Gran Turismo 7",
+      "description": "Simulador de corrida com gráficos realistas e uma vasta seleção de carros.",
+      "image": "https://meups.com.br/wp-content/uploads/2022/03/Gran-Turismo-7-analise-vale-a-pena.jpg",
+      "label": "Corrida",
+      "price": 249.9
+    },
+    {
+      "id": 11,
+      "name": "Final Fantasy VII Remake",
+      "description": "Remake do clássico RPG, com gráficos atualizados e combate em tempo real.",
+      "image": "https://projetoitaca.com.br/wp-content/uploads/2022/09/finalfantasyviiremake11.jpeg",
+      "label": "RPG",
+      "price": 199.9
+    },
+    {
+      "id": 12,
+      "name": "Forza Horizon 5",
+      "description": "Jogo de corrida de mundo aberto com gráficos impressionantes e uma grande variedade de carros.",
+      "image": "https://store-images.s-microsoft.com/image/apps.33953.13806078025361171.9723cf5e-1e29-4d9d-ad0a-cc37a95bb75d.afabb748-2c30-4a7e-8072-2809a222192d?q=90&w=480&h=270",
+      "label": "Corrida",
+      "price": 59.9
+    },
+    {
+      "id": 13,
+      "name": "Apex Legends",
+      "description": "Battle royale com equipes de heróis, cada um com habilidades únicas.",
+      "image": "https://sm.ign.com/t/ign_br/screenshot/default/apex-legends-lendas_6emk.1200.jpg",
+      "label": "Atirador",
+      "price": 0.0
+    },
+    {
+      "id": 14,
+      "name": "Minecraft Dungeons",
+      "description": "Jogo de ação e RPG ambientado no universo de Minecraft, com foco em masmorras.",
+      "image": "https://assets1.ignimgs.com/2020/06/18/minecraft-dungeons-1280-1592460208159.jpg",
+      "label": "RPG",
+      "price": 99.9
+    },
+    {
+      "id": 15,
+      "name": "Overwatch 2",
+      "description": "Jogo de tiro em equipe com heróis, cada um com habilidades únicas e trabalho em equipe essencial.",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte7acaf850e5d532d/67576d548c2c1d7026faad29/OW2_2024_S14-Launch-BNET_SHOP-browsingcard_1920x1080.png",
+      "label": "Atirador",
+      "price": 179.9
+    },
+    {
+      "id": 16,
+      "name": "Red Dead Redemption 1",
+      "description": "Aventura no Velho Oeste, com um vasto mundo aberto e uma história épica.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Red_Dead_Redemption.jpg/220px-Red_Dead_Redemption.jpg",
+      "label": "Aventura",
+      "price": 249.9
+    },
+    {
+      "id": 17,
+      "name": "Rocket League",
+      "description": "Futebol com carros, onde você dirige veículos em arenas e tenta marcar gols.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJANR1OZtB3WTef1I80MZGu8t93BEfj5BfXg&s",
+      "label": "Esportes",
+      "price": 99.9
+    },
+    {
+      "id": 18,
+      "name": "The Elder Scrolls V: Skyrim",
+      "description": "RPG de mundo aberto, onde você explora um vasto reino e luta contra dragões.",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/2820/h12URI7MdswtFPFHpkppNh2z.png",
+      "label": "RPG",
+      "price": 129.9
+    },
+    {
+      "id": 19,
+      "name": "Assassin's Creed Valhalla",
+      "description": "Aventura e ação com vikings, onde você explora terras antigas e participa de batalhas épicas.",
+      "image": "https://dicaspc.com.br/wp-content/uploads/2021/12/37b8cbaf-b0f9-4089-b264-bfeb857af868.jpg",
+      "label": "Aventura",
+      "price": 199.9
+    },
+    {
+      "id": 20,
+      "name": "Dark Souls III",
+      "description": "RPG de ação desafiador com combates intensos e uma narrativa sombria.",
+      "image": "https://assets.nuuvem.com/image/upload/v1/products/5703b88ed27734565a000045/sharing_images/khotnvdk8lir2sjxmfst.jpg",
+      "label": "RPG",
+      "price": 149.9
+    },
+    {
+      "id": 21,
+      "name": "Cyberpunk 2077",
+      "description": "RPG de mundo aberto em um futuro distópico.",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWH8K2baa5QsbGLwLgdOBoCgAH8G-tts6ljcfY3mdpYjy4QjtJxuaAPeTM3asitg9ti_Mf",
+      "label": "RPG",
+      "price": 199.9
+    },
+    {
+      "id": 22,
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "description": "Aventura épica em um mundo aberto.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/0/0f/Legend_of_Zelda_Breath_of_the_Wild_capa.png/270px-Legend_of_Zelda_Breath_of_the_Wild_capa.png",
+      "label": "Aventura",
+      "price": 299.9
+    },
+    {
+      "id": 23,
+      "name": "Super Mario Odyssey",
+      "description": "Aventura de plataforma com Mario.",
+      "image": "https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-624965-52.jpg",
+      "label": "Plataforma",
+      "price": 249.9
+    },
+    {
+      "id": 24,
+      "name": "Horizon Zero Dawn",
+      "description": "Ação em um mundo pós-apocalíptico.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNGY2NjUzOTItMjkzNS00NzNiLWIwY2MtMzQ3MDIwY2RlNjdjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "label": "Ação",
+      "price": 199.9
+    },
+    {
+      "id": 25,
+      "name": "Animal Crossing: New Horizons",
+      "description": "Simulação de vida em uma ilha paradisíaca.",
+      "image": "https://upload.wikimedia.org/wikipedia/id/thumb/1/1f/Animal_Crossing_New_Horizons.jpg/220px-Animal_Crossing_New_Horizons.jpg",
+      "label": "Simulação",
+      "price": 249.9
+    },
+    {
+      "id": 26,
+      "name": "Doom Eternal",
+      "description": "FPS intenso com demônios e ação frenética.",
+      "image": "https://store-images.s-microsoft.com/image/apps.19006.14633846388270955.34167af5-fabe-4bb4-87d1-87f313b6f79c.04c39d71-02b4-4f11-8a36-90dcb5326abe?h=862&format=jpg",
+      "label": "Atirador",
+      "price": 179.9
+    },
+    {
+      "id": 27,
+      "name": "Stardew Valley",
+      "description": "Simulação de fazenda e vida rural.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkeLlFQDTHsYjSHtbBsInAYl2aIF54Qz_8zQ&s",
+      "label": "Simulação",
+      "price": 59.9
+    },
+    {
+      "id": 28,
+      "name": "The Last of Us Part II",
+      "description": "Ação e sobrevivência em um mundo pós-apocalíptico.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/9/96/The_Last_of_Us_2_capa.png",
+      "label": "Ação",
+      "price": 199.9
+    },
+    {
+      "id": 29,
+      "name": "Hades",
+      "description": "Roguelike de ação com mitologia grega.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/8/80/Hades_capa.jpg",
+      "label": "Roguelike",
+      "price": 99.9
+    },
+    {
+      "id": 30,
+      "name": "Among Trees",
+      "description": "Exploração e sobrevivência em uma floresta.",
+      "image": "https://assets-prd.ignimgs.com/2022/08/17/amongtrees-1660695102598.jpg",
+      "label": "Sobrevivência",
+      "price": 49.9
+    },
+    {
+      "id": 31,
+      "name": "Celeste",
+      "description": "Plataforma desafiador com uma história emocionante.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Celeste_box_art_full.png/800px-Celeste_box_art_full.png",
+      "label": "Plataforma",
+      "price": 69.9
+    },
+    {
+      "id": 32,
+      "name": "Dead Cells",
+      "description": "Roguelike de ação com combate rápido.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRitF38kKfmZ9SbVYiPT6KYHWMuEQLHIa78AA&s",
+      "label": "Roguelike",
+      "price": 79.9
+    },
+    {
+      "id": 33,
+      "name": "Cuphead",
+      "description": "Plataforma com estilo visual único e desafios difíceis.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/c/c1/Cuphead_capa.png",
+      "label": "Plataforma",
+      "price": 89.9
+    },
+    {
+      "id": 34,
+      "name": "Ori and the Blind Forest",
+      "description": "Aventura emocionante em um mundo mágico.",
+      "image": "https://lastfm.freetls.fastly.net/i/u/ar0/d4cd73f0adeac87a8951ff3ade82f300.jpg",
+      "label": "Metroidvania",
+      "price": 99.9
+    },
+    {
+      "id": 35,
+      "name": "Hollow Knight",
+      "description": "Metroidvania com exploração e combate desafiador.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Hollow_Knight_first_cover_art.webp/274px-Hollow_Knight_first_cover_art.webp.png",
+      "label": "Metroidvania",
+      "price": 59.9
+    },
+    {
+      "id": 36,
+      "name": "Portal 2",
+      "description": "Quebra-cabeças com portais e física única.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/f/f9/Portal2cover.jpg",
+      "label": "Quebra-cabeça",
+      "price": 49.9
+    },
+    {
+      "id": 37,
+      "name": "Bloodborne",
+      "description": "RPG de ação desafiador com combates intensos.",
+      "image": "https://assets-prd.ignimgs.com/2024/11/24/bloodborneconcord2-1732446312120.jpg",
+      "label": "RPG",
+      "price": 149.9
+    },
+    {
+      "id": 38,
+      "name": "Outlast 2",
+      "description": "Sobreviva a horrores em um ambiente assustador.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkIu8SKmaiAF-PKEqR3pFnf18X_8t0y87NBA&s",
+      "label": "Terror",
+      "price": 129.9
+    },
+    {
+      "id": 39,
+      "name": "Sekiro: Shadows Die Twice",
+      "description": "Ação e aventura com combate preciso.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/7/7b/Sekiro_Shadows_Die_Twice_capa.png",
+      "label": "Ação",
+      "price": 199.9
+    },
+    {
+      "id": 40,
+      "name": "Monster Hunter: World",
+      "description": "Caça a monstros em um mundo vasto.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/3/34/Monster_Hunter_World_capa.jpg",
+      "label": "Ação",
+      "price": 149.9
+    },
+    {
+      "id": 41,
+      "name": "Ghost of Tsushima",
+      "description": "Ação e aventura em um mundo samurai.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/d/dc/Ghost_of_Tsushima_capa.png",
+      "label": "Ação",
+      "price": 199.9
+    },
+    {
+      "id": 42,
+      "name": "Spider-Man: Miles Morales",
+      "description": "Ação e aventura com o Homem-Aranha.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/7/74/Spider-Man_Miles_Morales_capa.png",
+      "label": "Ação",
+      "price": 249.9
+    },
+    {
+      "id": 43,
+      "name": "Assassin's Creed Odyssey",
+      "description": "RPG de mundo aberto na Grécia Antiga.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/99/ACOdysseyCoverArt.png",
+      "label": "RPG",
+      "price": 149.9
+    },
+    {
+      "id": 44,
+      "name": "Red Dead Redemption 2",
+      "description": "Mundo aberto de faroeste e aventura.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zw3ba8igTlqTD-rCWWQgpjA1dFwTv0DV3w&s",
+      "label": "Aventura",
+      "price": 199.9
+    },
+    {
+      "id": 45,
+      "name": "Death Stranding",
+      "description": "Ação e exploração em um mundo pós-apocalíptico.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/e/eb/Death-Stranding-poster.jpg",
+      "label": "Ação",
+      "price": 179.9
+    },
+    {
+      "id": 46,
+      "name": "Control",
+      "description": "Ação e tiro em um ambiente surreal.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/7/73/Control_capa.png",
+      "label": "Ação",
+      "price": 129.9
+    },
+    {
+      "id": 47,
+      "name": "The Outer Worlds",
+      "description": "RPG de ficção científica com escolhas impactantes.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ku4d9PtByjdTGqU3KOeRyOa7tFsaxAah4Q&s",
+      "label": "RPG",
+      "price": 149.9
+    },
+    {
+      "id": 48,
+      "name": "Disco Elysium",
+      "description": "RPG investigativo com foco em diálogos.",
+      "image": "https://www.adrenaline.com.br/wp-content/uploads/2023/08/disco-elysium-the-final-cut-capa.jpg",
+      "label": "RPG",
+      "price": 99.9
+    },
+    {
+      "id": 49,
+      "name": "Fire Emblem: Three Houses",
+      "description": "RPG tático com estratégia e personagens cativantes.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/c/c8/Fire_Emblem_Three_Houses_capa.png",
+      "label": "RPG",
+      "price": 199.9
+    },
+    {
+      "id": 50,
+      "name": "Persona 5 Royal",
+      "description": "RPG com uma história envolvente e estilo único.",
+      "image": "https://preview.redd.it/whats-the-best-and-worst-confidant-in-persona-5-royal-story-v0-tz283zn1tszb1.jpg?width=1080&crop=smart&auto=webp&s=d663f557c689506bd06aea2c59e5c10303695b36",
+      "label": "RPG",
+      "price": 249.9
+    },
+    {
+      "id": 51,
+      "name": "Final Fantasy VII Remake",
+      "description": "Remake do clássico RPG com gráficos modernos.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/ce/FFVIIRemake.png",
+      "label": "RPG",
+      "price": 199.9
+    },
+    {
+      "id": 52,
+      "name": "Nier: Automata",
+      "description": "Ação e RPG em um mundo pós-apocalíptico.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/1/15/Nier_Automata_capa.png",
+      "label": "RPG",
+      "price": 149.9
+    },
+    {
+      "id": 53,
+      "name": "Divinity: Original Sin 2",
+      "description": "RPG tático com liberdade de escolha.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/4/4a/Divinity_Original_Sin_II_Larian_Studios_key_art.png",
+      "label": "RPG",
+      "price": 129.9
+    },
+    {
+      "id": 54,
+      "name": "Xenoblade Chronicles 2",
+      "description": "RPG de mundo aberto com uma história épica.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/Xenoblade_Chronicles_2.jpg",
+      "label": "RPG",
+      "price": 199.9
+    },
+    {
+      "id": 55,
+      "name": "Octopath Traveler",
+      "description": "RPG com estilo visual único e histórias interligadas.",
+      "image": "https://m.media-amazon.com/images/I/91MPynJRxgL._AC_UF1000,1000_QL80_.jpg",
+      "label": "RPG",
+      "price": 149.9
+    },
+    {
+      "id": 56,
+      "name": "Dragon Quest XI",
+      "description": "RPG clássico com uma jornada épica.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTucX51ce_6u19xiJMTdoHl5a-WpW7KG32zUQ&s",
+      "label": "RPG",
+      "price": 179.9
+    },
+    {
+      "id": 57,
+      "name": "The Legend of Heroes: Trails of Cold Steel",
+      "description": "RPG com foco em história e personagens.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgoT-dmYVSbAZeZwP57T-3Ih5JHPxd3VDFg&s",
+      "label": "RPG",
+      "price": 129.9
+    },
+    {
+      "id": 58,
+      "name": "Ys IX: Monstrum Nox",
+      "description": "RPG de ação com exploração e combate rápido.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJGH0IWUngB5bEEvIszxQKeBEubdyjRD2lA&s",
+      "label": "RPG",
+      "price": 149.9
+    },
+    {
+      "id": 59,
+      "name": "Tales of Arise",
+      "description": "RPG de ação com gráficos impressionantes.",
+      "image": "https://store-images.s-microsoft.com/image/apps.53840.14220579343208919.30d737b4-d1cd-4f53-ae6f-df6cc7a21450.5106ecb4-abee-48bd-9f3b-0600583211da?q=90&w=480&h=270",
+      "label": "RPG",
+      "price": 199.9
+    },
+    {
+      "id": 60,
+      "name": "Genshin Impact",
+      "description": "RPG de mundo aberto com elementos de ação.",
+      "image": "https://img.odcdn.com.br/wp-content/uploads/2021/03/Genshin-Impact-capa.jpg",
+      "label": "RPG",
+      "price": 0.0
+    },
+    {
+      "id": 61,
+      "name": "League of Legends",
+      "description": "Jogo de estratégia e batalha online.",
+      "image": "https://s2-ge.glbimg.com/fxI0yK-cdnMNI2FrieyuHcdCtkE=/0x0:984x554/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/6/Q/Fq6AMUTJKxZA7SVgIJBA/league-of-legends.jpg",
+      "label": "MOBA",
+      "price": "0.0"
+    },
+    {
+      "id": 62,
+      "name": "Dota 2",
+      "description": "Jogo de estratégia e batalha online.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/31/Dota_2_Steam_artwork.jpg",
+      "label": "MOBA",
+      "price": "0.0"
+    },
+    {
+      "id": 63,
+      "name": "Grand Theft Auto V",
+      "description": "Mundo aberto com ação e missões variadas.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/8/80/Grand_Theft_Auto_V_capa.png",
+      "label": "Ação",
+      "price": "50.0"
+    },
+    {
+      "id": 64,
+      "name": "Planet Zoo",
+      "description": "Construa e gerencie seu próprio zoológico.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/a/aa/Planet_Zoo_capa_digital.jpg",
+      "label": "Simulação",
+      "price": "30.0"
+    },
+    {
+      "id": 65,
+      "name": "Cities: Skylines",
+      "description": "Construa e gerencie sua própria cidade.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/5/58/Cities_Skylines_cover_art.jpg",
+      "label": "Simulação",
+      "price": "30.0"
+    },
+    {
+      "id": 66,
+      "name": "Euro Truck Simulator 2",
+      "description": "Simulador de caminhões com viagens pela Europa.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/0e/Euro_Truck_Simulator_2_cover.jpg",
+      "label": "Simulação",
+      "price": "15.0"
+    },
+    {
+      "id": 67,
+      "name": "Skate 3",
+      "description": "Jogo de skate com desafios e competições.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/8/84/Skate-3-Boxart.jpg",
+      "label": "Esportes",
+      "price": "60.0"
+    },
+    {
+      "id": 68,
+      "name": "Tony Hawk's Pro Skater 1 + 2",
+      "description": "Remake dos clássicos jogos de skate.",
+      "image": "https://d.newsweek.com/en/full/1589297/tony-hawks-pro-skater-1-2-remaster.jpg?w=1200&f=76344179471c9980457e97bf7b9298b6",
+      "label": "Esportes",
+      "price": "60.0"
+    },
+    {
+      "id": 69,
+      "name": "F1 2024",
+      "description": "Corrida de Fórmula 1 com gráficos realistas.",
+      "image": "https://uploads.folhavitoria.com.br/2024/11/WFmkWIkK-a3a83a80-fe64-11ee-b496-839201a2b71e-png.webp",
+      "label": "Esportes",
+      "price": "60.0"
+    },
+    {
+      "id": 70,
+      "name": "Lethal Company",
+      "description": "Sobreviver e explorar em planetas de forma COOP",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIjZ8Y7AA2x3vnyeAdzeiz8r2CUBlG-lvKbw&s",
+      "label": "Festa",
+      "price": "60.0"
+    },
+    {
+      "id": 71,
+      "name": "BATTELFIELD 1",
+      "description": "Jogo de guerra com gráficos realistas.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/7/75/Battlefield_1_capa.png",
+      "label": "Atirador",
+      "price": "60.0"
+    },
+    {
+      "id": 72,
+      "name": "Need For Speed",
+      "description": "Corrida de carros com muita velocidade.",
+      "image": "https://img.redbull.com/images/c_crop,x_210,y_0,h_800,w_640/c_fill,w_450,h_600/q_auto:low,f_auto/redbullcom/2015/08/11/1331740714779_2/need-for-speed",
+      "label": "Corrida",
+      "price": "60.0"
+    },
+    {
+      "id": 73,
+      "name": "Phasmophobia",
+      "description": "Jogo de terror com caça a fantasmas.",
+      "image": "https://i.scdn.co/image/ab67616d00001e0268d6c84d05d26849d7d3ddf9",
+      "label": "Terror",
+      "price": "60.0"
+    },
+    {
+      "id": 74,
+      "name": "Silent Hill 2 Remake",
+      "description": "Remake do clássico jogo de terror.",
+      "image": "https://i0.wp.com/ovicio.com.br/wp-content/uploads/2023/01/20230105-ovicio-silent-hill-remake-6.jpg?resize=555%2C555&ssl=1",
+      "label": "Terror",
+      "price": "60.0"
+    },
+    {
+      "id": 75,
+      "name": "Mortal Kombat 11",
+      "description": "Jogo de luta com personagens icônicos.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/2/21/Mortal_Kombat_11_capa.jpg",
+      "label": "Luta",
+      "price": "60.0"
+    },
+    {
+      "id": 75,
+      "name": "Injustice 2",
+      "description": "Jogo de luta com personagens da DC Comics.",
+      "image": "https://store-images.s-microsoft.com/image/apps.51626.68598211680266771.73ef9826-822a-4a0b-ab4a-4fe8fd87fc3b.714f1b5c-6793-443d-a291-74b81479dc92",
+      "label": "Luta",
+      "price": "60.0"
+    },
+    {
+      "id": 76,
+      "name": "Tekken 7",
+      "description": "Jogo de luta com personagens icônicos.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/1/11/Tekken_7_capa.png/270px-Tekken_7_capa.png",
+      "label": "Luta",
+      "price": "60.0"
+    },
+    {
+      "id": 77,
+      "name": "SAMURAI SHODOWN NEOGEO COLLECTION",
+      "description": "Jogo de luta com personagens icônicos.",
+      "image": "https://store-images.s-microsoft.com/image/apps.58186.13674646977960925.9db53c0b-a3b6-490f-938f-013f9c73f901.036ebeb9-1979-4b4d-b37c-d0acc8e87fb7",
+      "label": "Luta",
+      "price": "60.0"
+    },
+    {
+      "id": 78,
+      "name": "Metroid Dread",
+      "description": "Ação e aventura com a caçadora de recompensas Samus Aran.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/5/50/Metroid-Dread-capa.jpeg/270px-Metroid-Dread-capa.jpeg",
+      "label": "Metroidvania",
+      "price": "400.0"
+    },
+    {
+      "id": 79,
+      "name": "Blasphemous",
+      "description": "Metroidvania com combate desafiador e visual único.",
+      "image": "https://www.adrenaline.com.br/wp-content/uploads/2023/08/blasphemous-capa.jpg",
+      "label": "Metroidvania",
+      "price": "20.0"
+    },
+    {
+      "id": 80,
+      "name": "Castlevania: Symphony of the Night",
+      "description": "Clássico jogo de ação e exploração.",
+      "image": "https://i.scdn.co/image/ab67616d0000b273aafa93f5ac3b3b9a22727862",
+      "label": "Metroidvania",
+      "price": "20.0"
+    },
+    {
+      "id": 81,
+      "name": "There is No Game: Wrong Dimension",
+      "description": "Jogo de aventura e quebra-cabeça com uma narrativa única.",
+      "image": "https://assets-prd.ignimgs.com/2021/04/26/there-is-no-game-button-01-1619472403964.jpg",
+      "label": "Quebra-cabeça",
+      "price": "20.0"
+    },
+    {
+      "id": 82,
+      "name": "Final Fantasy XIV Online",
+      "description": "MMORPG com uma história épica e muitas classes.",
+      "image": "https://www.adrenaline.com.br/wp-content/uploads/2023/07/final-fantasy-xiv-capa.jpg",
+      "label": "MMORPG",
+      "price": "20.0"
+    },
+    {
+      "id": 83,
+      "name": "World of Warcraft",
+      "description": "MMORPG com muitas raças e classes para escolher.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/9/91/WoW_Box_Art1.jpg",
+      "label": "MMORPG",
+      "price": "20.0"
+    },
+    {
+      "id": 84,
+      "name": "DIABLO III",
+      "description": "RPG de ação com muitos inimigos e loot.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/1/12/DiabloIIIcover.jpg",
+      "label": "MMORPG",
+      "price": "20.0"
+    },
+    {
+      "id": 85,
+      "name": "Don't Starve ",
+      "description": " Jogo de sobrevivência com elementos de crafting e exploração.",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOWpLTWiMYp1vkeGpyYB337aWUgYT-8kfHJ4zx4_1Quz6UH9JNejPYHN_X6AxZMRRMWBSrmktGpRZJv9hJZAtzhyphenhyphen6XziztRkaPLkh6yGoJjZXTnzSZtBZBSfhLKPdpX6hsH1tVq4cygg/s1600/dont+starve.jpg",
+      "label": "Sobrevivência",
+      "price": "20.0"
+    },
+    {
+      "id": 86,
+      "name": "The Forest",
+      "description": "Jogo de sobrevivência com elementos de terror.",
+      "image": "https://cdn-offer-photos.zeusx.com/4e5b7d20-6a9d-40c2-b14c-16d5d93bf0d4.jpg",
+      "label": "Sobrevivência",
+      "price": "20.0"
+    },
+    {
+      "id": 87,
+      "name": "Ark Survival Evolved",
+      "description": "Jogo de sobrevivência e crafting com Dinossauros.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/d/d0/Ark_Survival_Evolved_%C3%ADcone_digital_Nintendo_Switch_Studio_Wildcard.png",
+      "label": "Sobrevivência",
+      "price": "20.0"
+    },
+    {
+      "id": 88,
+      "name": "Sid Meier's Civilization VI",
+      "description": "Jogo de Estratégia com civilizações Históricas.",
+      "image": "https://www.adrenaline.com.br/wp-content/uploads/2023/07/sid-meiers-civilization-vi-capa.jpg",
+      "label": "Estratégia",
+      "price": "20.0"
+    },
+    {
+      "id": 89,
+      "name": "Hearts of Iron IV",
+      "description": "Jogo de Estratégia para você comandar qualquer nação na segunda guerra mundial.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/1/11/Hearts_of_Iron_IV.jpg",
+      "label": "Estratégia",
+      "price": "20.0"
+    },
+    {
+      "id": 90,
+      "name": "Astro Bot",
+      "description": "Jogo de Plataforma ",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/5/5c/Astro_Bot.webp/640px-Astro_Bot.webp.png",
+      "label": "Plataforma",
+      "price": "20.0"
+    },
+    {
+      "id": 91,
+      "name": "Star Wars Jedi Fallen Order",
+      "description": "Jogo de Aventura que você controla Cal Kestis um Padawan que virou Fugitivo",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/d/d6/Star_Wars_Jedi_Fallen_Order_capa.png/270px-Star_Wars_Jedi_Fallen_Order_capa.png",
+      "label": "Aventura",
+      "price": "20.0"
+    }
+  ],
+  "pageable": {
+    "pageNumber": 0,
+    "pageSize": 20,
+    "sort": { "sorted": false, "unsorted": true, "empty": true },
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 3,
+  "totalElements": 48,
+  "last": false,
+  "numberOfElements": 20,
+  "first": true,
+  "size": 20,
+  "number": 0,
+  "sort": { "sorted": false, "unsorted": true, "empty": true },
+  "empty": false
+}

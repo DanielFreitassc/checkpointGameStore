@@ -1,31 +1,31 @@
 {
   "games": [
     {
-      "id": 1,
+      "id": 91,
       "name": "Star Wars Jedi: Fallen Order",
       "description": "Uma aventura no universo de Star Wars como um jovem Padawan.",
       "image": "/starwars-wallpaper.jpg"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Minecraft",
       "description": "Explore, construa e sobreviva em um mundo de blocos infinito.",
       "image": "/minecraft-wallaper.jpg"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "The Witcher 3: Wild Hunt",
       "description": "Acompanhe Geralt em uma jornada épica em um mundo aberto.",
       "image": "/thewitcher-wallapepr.jpg"
     },
     {
-      "id": 4,
+      "id": 26,
       "name": "Doom Eternal",
       "description": "Ação frenética enfrentando hordas de demônios no inferno.",
-      "image": "/doometernal-wallpaper.jpg"
+      "image": "/doometernal-wallpaper.jpeg"
     },
     {
-      "id": 5,
+      "id": 1,
       "name": "God of War (2018)",
       "description": "Kratos e Atreus exploram a mitologia nórdica em uma jornada épica.",
       "image": "/godofwar-wallpaper.jpg"

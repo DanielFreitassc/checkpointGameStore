@@ -72,3 +72,12 @@ export const Slide = styled.div`
     }
   }
 `;
+
+export const NotFoundGame = styled.h2`
+  display: flex;
+  justify-content: center;
+  font-size: clamp(0.8rem, 4vw + 1rem, 2rem);
+  border-bottom: 3px solid ${({ theme }) => theme.colors.tagBackground};
+  padding-bottom: 1rem;
+  text-align: center;
+`;

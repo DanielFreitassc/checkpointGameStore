@@ -121,3 +121,14 @@ export const Paginacao = styled.div`
     background-color: ${({ theme }) => theme.colors.textFooter};
   }
 `;
+
+
+export const Messages = styled.h2`
+  display: flex;
+  justify-content: center;
+  font-size: clamp(0.8rem, 4vw + 1rem, 2rem);
+  border-bottom: 3px solid ${({ theme }) => theme.colors.tagBackground};
+  padding-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+`
